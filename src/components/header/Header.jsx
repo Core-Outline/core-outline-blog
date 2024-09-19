@@ -1,11 +1,15 @@
 import React from 'react';
 import './header.css';
+import favicon from '../../assets/images/favicon.ico';
 
 const Header = () => {
   return (
     <header className="header">
       <div className="header-content">
-        <div className="logo">Core&Outline</div>
+        <div className="logo-container">
+          <img src={favicon} alt="Core&Outline logo" className="logo-icon" />
+          <div className="logo-text">Core&Outline</div>
+        </div>
         <nav className="main-nav">
           <ul>
             <li><a href="/">All</a></li>

@@ -88,7 +88,7 @@ h2 {
 }
 
 .post-item .post-info {
-  padding: 1rem;
+  padding: 0.5rem 1rem; /* Further reduced top padding */
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -100,11 +100,42 @@ h2 {
 
 .category {
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
   color: #007bff;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.15rem; /* Further reduced margin-bottom */
+  padding: 0.15rem 0.5rem; /* Further reduced padding */
+  border-radius: 1rem;
+  background-color: rgba(0, 123, 255, 0.1);
+  white-space: nowrap;
+  width: fit-content; /* Add this line */
+}
+
+.post-item .category {
+  color: #007bff;
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+.featured-post .category {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Add these new styles for specific categories */
+.category.how-we-build {
+  color: #28a745;
+  background-color: rgba(40, 167, 69, 0.1);
+}
+
+.category.market-insights {
+  color: #ffc107;
+  background-color: rgba(255, 193, 7, 0.1);
+}
+
+.category.product-updates {
+  color: #17a2b8;
+  background-color: rgba(23, 162, 184, 0.1);
 }
 
 h3 {
@@ -136,3 +167,13 @@ p {
   margin: 0;
   padding: 0;
 } */
+
+.post-info-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.post-info-link:hover {
+  text-decoration: none;
+}

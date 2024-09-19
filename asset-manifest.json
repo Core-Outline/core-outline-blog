@@ -1,18 +1,23 @@
 {
   "files": {
-    "main.css": "/core-outline-blog/static/css/main.24fc5054.css",
-    "main.js": "/core-outline-blog/static/js/main.9ba81f92.js",
+    "main.css": "/core-outline-blog/static/css/main.e6e3c0b2.css",
+    "main.js": "/core-outline-blog/static/js/main.ec482b40.js",
+    "static/media/scim_video.mp4": "/core-outline-blog/static/media/scim_video.9a5df03a8b9291631534.mp4",
+    "static/media/market-insights.jpg": "/core-outline-blog/static/media/market-insights.b61dca87b2d75065911c.jpg",
     "static/media/scim.png": "/core-outline-blog/static/media/scim.5483f103bf16be455068.png",
+    "static/media/product-roadmap.jpg": "/core-outline-blog/static/media/product-roadmap.5e87859da7e5cf785851.jpg",
+    "static/media/benchmarks.jpg": "/core-outline-blog/static/media/benchmarks.e34fc4b83ee57ebbf80e.jpg",
+    "static/media/favicon.ico": "/core-outline-blog/static/media/favicon.3acd399f363f56f2b69d.ico",
     "static/media/slick.svg": "/core-outline-blog/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/core-outline-blog/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/core-outline-blog/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/core-outline-blog/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/core-outline-blog/index.html",
-    "main.24fc5054.css.map": "/core-outline-blog/static/css/main.24fc5054.css.map",
-    "main.9ba81f92.js.map": "/core-outline-blog/static/js/main.9ba81f92.js.map"
+    "main.e6e3c0b2.css.map": "/core-outline-blog/static/css/main.e6e3c0b2.css.map",
+    "main.ec482b40.js.map": "/core-outline-blog/static/js/main.ec482b40.js.map"
   },
   "entrypoints": [
-    "static/css/main.24fc5054.css",
-    "static/js/main.9ba81f92.js"
+    "static/css/main.e6e3c0b2.css",
+    "static/js/main.ec482b40.js"
   ]
 }

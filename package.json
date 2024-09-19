@@ -41,7 +41,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://TomiTsuma.github.io/core-outline/blog",
+  "homepage": "https://core-outline.github.io/core-outline-blog",
   "devDependencies": {
     "gh-pages": "^6.1.1"
   }

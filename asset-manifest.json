@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/core-outline-blog/static/css/main.e6e3c0b2.css",
-    "main.js": "/core-outline-blog/static/js/main.ec482b40.js",
+    "main.css": "/core-outline-blog/static/css/main.f112cca5.css",
+    "main.js": "/core-outline-blog/static/js/main.fd86d962.js",
     "static/media/scim_video.mp4": "/core-outline-blog/static/media/scim_video.9a5df03a8b9291631534.mp4",
     "static/media/market-insights.jpg": "/core-outline-blog/static/media/market-insights.b61dca87b2d75065911c.jpg",
     "static/media/scim.png": "/core-outline-blog/static/media/scim.5483f103bf16be455068.png",
     "static/media/product-roadmap.jpg": "/core-outline-blog/static/media/product-roadmap.5e87859da7e5cf785851.jpg",
     "static/media/benchmarks.jpg": "/core-outline-blog/static/media/benchmarks.e34fc4b83ee57ebbf80e.jpg",
+    "static/media/supply_chain.png": "/core-outline-blog/static/media/supply_chain.b190d5471e579b61bd48.png",
+    "static/media/tom.jpeg": "/core-outline-blog/static/media/tom.cf2ebccd693038cfa566.jpeg",
     "static/media/favicon.ico": "/core-outline-blog/static/media/favicon.3acd399f363f56f2b69d.ico",
     "static/media/slick.svg": "/core-outline-blog/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/core-outline-blog/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/core-outline-blog/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/core-outline-blog/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/core-outline-blog/index.html",
-    "main.e6e3c0b2.css.map": "/core-outline-blog/static/css/main.e6e3c0b2.css.map",
-    "main.ec482b40.js.map": "/core-outline-blog/static/js/main.ec482b40.js.map"
+    "main.f112cca5.css.map": "/core-outline-blog/static/css/main.f112cca5.css.map",
+    "main.fd86d962.js.map": "/core-outline-blog/static/js/main.fd86d962.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6e3c0b2.css",
-    "static/js/main.ec482b40.js"
+    "static/css/main.f112cca5.css",
+    "static/js/main.fd86d962.js"
   ]
 }

@@ -104,8 +104,8 @@ h2 {
   font-weight: 600;
   text-transform: uppercase;
   color: #007bff;
-  margin-bottom: 0.15rem; /* Further reduced margin-bottom */
-  padding: 0.15rem 0.5rem; /* Further reduced padding */
+  margin-bottom: 0.15rem; 
+  padding: 0.15rem 0.5rem; 
   border-radius: 1rem;
   background-color: rgba(0, 123, 255, 0.1);
   white-space: nowrap;

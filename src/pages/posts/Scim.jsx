@@ -5,57 +5,47 @@ import scimImage from '../../assets/images/scim.png';
 import supplyChainImage from '../../assets/images/supply_chain.png'; // Import the new image
 import authorImage from '../../assets/images/tom.jpeg';
 import scimVideo from '../../assets/videos/scim_video.mp4';
-
+import NewsletterWidget from '../../components/newsletter/Newsletter';
 const SCIM = () => {
   return (
     <div className="blog-post">
       <Header />
-        <div className="blog-post-container">
-          <nav className="table-of-contents">
-            <h3>Table of Contents</h3>
-            <ul>
-              <li>Introduction</li>
-              <li>The Challenge</li>
-              <li>Our Solution: AI Agents</li>
-              <li>Shaped Reward Deep Q-Learning</li>
-              <li>Model Details</li>
-              <li>Structure</li>
-              <li>Benefits</li>
-              <li>Conclusion</li>
-            </ul>
-          </nav>
+      <div className="blog-post-container">
+
+        <div className="featured-image-container">
+          <img src={scimImage} alt="AI agents for Supply Chain Management" className="featured-image" />
         </div>
+      </div>
+
       <main className="blog-content">
+
+
         <article>
-          <header className="post-header">
-            <h1>AI agents for supercharged Supply Chain and Inventory Management</h1>
-            
-          </header>
-          <div className="featured-image-container">
-            <img src={scimImage} alt="AI agents for Supply Chain Management" className="featured-image" />
-          </div>
 
           <div className="post-meta">
             <div className="author-section">
-            <img src={authorImage} alt="Author" className="author-image" />
-            <div className="author-info">
-              <strong>Thomas Tsuma</strong>
-              <p className="author-title">Core&Outline</p>
-              <a href="https://www.linkedin.com/in/tomitsuma" className="author-social" target="_blank" rel="noopener noreferrer">@ThomasTsuma</a>
-              
+              <img src={authorImage} alt="Author" className="author-image" />
+              <div className="author-info">
+                <strong>Thomas Tsuma</strong>
+                <p className="author-title">Core&Outline</p>
+                <a href="https://www.linkedin.com/in/tomitsuma" className="author-social" target="_blank" rel="noopener noreferrer">@ThomasTsuma</a>
+
+              </div>
+
             </div>
-            
-            </div>
-              
-              <span className="read-time">10 mins read</span>
-              <span className="publish-date">Published: Aug 13, 2024</span>
-              
-            </div>
-            <span className="category product-updates">Product Updates</span>
+
+            <span className="read-time">10 mins read</span>
+            <span className="publish-date">Published: Aug 13, 2024</span>
+
+          </div>
           
+          <header className="post-header">
+            <h1>AI agents for supercharged Supply Chain and Inventory Management</h1>
+          </header>
+          <span className="category product-updates">Product Updates</span>
           <div className="post-body">
             <h2 id="introduction">Introduction</h2>
-            <p>In today's fast-paced business world, success hinges on efficient supply chain and inventory management. At Core&Outline, we've revolutionized this process by leveraging Shaped-Reward Deep Q-Learning, a cutting-edge technique that optimizes supply chain operations and minimizes costs with unparalleled precision. Our innovative approach is reshaping the future of inventory management, driving efficiency and profitability like never before.</p>            
+            <p>In today's fast-paced business world, success hinges almost entirely on efficiency and cost-effectiveness of business practices. At Core&Outline, we've revolutionized this process by leveraging Shaped-Reward Deep Q-Learning, a cutting-edge technique that optimizes supply chain operations and minimizes costs with unparalleled precision. Our innovative approach is reshaping the future of inventory management, driving efficiency and profitability like never before.</p>
 
             <div className="video-container">
               <video controls width="100%">
@@ -63,8 +53,8 @@ const SCIM = () => {
                 Your browser does not support the video tag.
               </video>
               <p className="video-caption">
-                <strong>Note:</strong> This video showcases our AI agent playing MIT's 'Beer Game', 
-                a simulation of supply chain dynamics. The game demonstrates how our AI optimizes 
+                <strong>Note:</strong> This video showcases our AI agent playing MIT's 'Beer Game',
+                a simulation of supply chain dynamics. The game demonstrates how our AI optimizes
                 inventory management and decision-making in complex supply chain scenarios.
               </p>
             </div>
@@ -85,8 +75,8 @@ const SCIM = () => {
             <div className="featured-image-container">
               <img src={supplyChainImage} alt="AI agents for Supply Chain Management" className="featured-image" />
             </div>
-            <p><strong>Note:</strong> 
-            This image showcases the flow of information and inventory in a typical supply chain.
+            <p><strong>Note:</strong>
+              This image showcases the flow of information and inventory in a typical supply chain.
             </p>
 
             <h2 id="our-solution-ai-agents">Our Solution: AI Agents</h2>
@@ -97,10 +87,10 @@ const SCIM = () => {
               More specifically we apply the concept of Deep Q-Learning with a shaped reward to solve this problem. This approach will be detailed later in this post.
             </p>
             <p>
-            <strong>Note:</strong> Deep Q-Learning is a type of reinforcement learning algorithm that uses a deep neural network to learn an optimal policy for a given task. The shaped reward is a reward function that is designed to encourage the AI agent to make decisions that minimize costs and maximize efficiency.
+              <strong>Note:</strong> Deep Q-Learning is a type of reinforcement learning algorithm that uses a deep neural network to learn an optimal policy for a given task. The shaped reward is a reward function that is designed to encourage the AI agent to make decisions that minimize costs and maximize efficiency.
             </p>
             <p>
-              As well, we acknowledge the intensive amount of computational power required to train these models and the need to reach near-optimal performance in a reasonable amount of iterations. 
+              As well, we acknowledge the intensive amount of computational power required to train these models and the need to reach near-optimal performance in a reasonable amount of iterations.
               These needs are met with the use of Transfer Learning as pretrained models are largely robust to slight parameter changes and can be fine-tuned for differing number of items, stockout and holdout costs.
               We maintain base models trained on simulated customer demand data that fits into different distributions and these allow our customers to get set up and start working with the models even if they do not have a lot of data at hand.
             </p>
@@ -126,8 +116,8 @@ const SCIM = () => {
             <div className="math-formula">
               <p>S<sub>t</sub><sup>i</sup> = [((IL<sub>j</sub><sup>i</sup>)<sup>+</sup>,(IL<sub>j</sub><sup>i</sup>)<sup>-</sup>, OO<sub>j</sub><sup>i</sup>, AO<sub>j</sub><sup>i</sup> , AS<sub>j</sub><sup>i</sup>)]<sup>t</sup><sub>j=t-m+1</sub></p>
             </div>
-            <p>IL<sub>j</sub><sup>i</sup> = Inventory level of item j at time t for agent i</p>  
-            <p>(IL<sub>j</sub><sup>i</sup>)<sup>+</sup> = Positive inventory level of item j at time t for agent i</p>  
+            <p>IL<sub>j</sub><sup>i</sup> = Inventory level of item j at time t for agent i</p>
+            <p>(IL<sub>j</sub><sup>i</sup>)<sup>+</sup> = Positive inventory level of item j at time t for agent i</p>
             <p>(IL<sub>j</sub><sup>i</sup>)<sup>-</sup> = Negative inventory level of item j at time t for agent i</p>
             <p>OO<sub>j</sub><sup>i</sup> = On-Order item j at time t for agent i</p>
             <p>AO<sub>j</sub><sup>i</sup> = Arriving Orders of item j at time t for agent i</p>
@@ -138,7 +128,7 @@ const SCIM = () => {
               <p>o<sub>t</sub><sup>i</sup> = [((IL<sub>j</sub><sup>i</sup>)<sup>+</sup>,(IL<sub>j</sub><sup>i</sup>)<sup>-</sup>, OO<sub>j</sub><sup>i</sup>, AO<sub>j</sub><sup>i</sup> , AS<sub>j</sub><sup>i</sup>) , ... , ((IL<sub>t</sub><sup>i</sup>)<sup>+</sup>,(IL<sub>t</sub><sup>i</sup>)<sup>-</sup>, OO<sub>t</sub><sup>i</sup>, AO<sub>t</sub><sup>i</sup> , AS<sub>t</sub><sup>i</sup>)]</p>
             </div>
             <p>The reason for limiting this vector size to the last m periods is because, as you can imagine, the vector can grow over time and that makes it difficult for the DNN to handle. The value of m is not set arbitrarily and depends on is adjusted to optimize model performance.</p>
-            
+
             <strong>Action Space</strong>
             <p>The actions in this game refers to the order quantity of item j from agent i to agent i+1.
               While the order quantity is a continuous value, we discretize it to a set of finite values to make it tractable for the DNN.
@@ -148,9 +138,9 @@ const SCIM = () => {
               <p>x ∈ [a<sub>l</sub>, a<sub>u</sub>] (a<sub>l</sub>, a<sub>u</sub>) ∈ &#8484;</p>
             </div>
             <p>
-            Where a<sub>l</sub> and a<sub>u</sub> are the lower and upper bounds of the action space.
-            At each time period t ∈ T:
-            The agent chooses order quantity q ∈ &#8477; to submit to agent i+1.
+              Where a<sub>l</sub> and a<sub>u</sub> are the lower and upper bounds of the action space.
+              At each time period t ∈ T:
+              The agent chooses order quantity q ∈ &#8477; to submit to agent i+1.
             </p>
             <strong>Q-Network</strong>
             <p>
@@ -162,9 +152,9 @@ const SCIM = () => {
             <div className="math-formula">
               <p>Q(s,a) = (1 - &alpha;)Q(s<sub>t</sub>,a<sub>t</sub>) + α<sub>t</sub>(r<sub>t+1</sub> + γmaxQ(s<sub>t+1</sub>,a)) , ∀t = 1,2,3... </p>
             </div>
-        
+
             <p>
-              &alpha; is the learning rate<br/>
+              &alpha; is the learning rate<br />
               &gamma; is the discount factor
             </p>
 
@@ -172,7 +162,7 @@ const SCIM = () => {
               The end result is a RL algorithm that obtains the Q value for any s ∈ S and a =  π(s)
             </p>
             <div className="math-formula">
-            <p>Q(s,a) = E [r<sub>t</sub> + γr<sub>t+1</sub> + γ<sup>2</sup>r<sub>t+2</sub> + · · · | s<sub>t</sub> = s, a<sub>t</sub> = a; π]</p>
+              <p>Q(s,a) = E [r<sub>t</sub> + γr<sub>t+1</sub> + γ<sup>2</sup>r<sub>t+2</sub> + · · · | s<sub>t</sub> = s, a<sub>t</sub> = a; π]</p>
             </div>
             <p>
               At each state, the agent decides on an action through an ε-greedy algorithm.
@@ -210,14 +200,14 @@ const SCIM = () => {
               At each time period t ∈ T, the agent chooses order quantity q ∈ &#8477; to submit to agent i+1.
             </p>
             <div className="math-formula">
-            <p>
-              &#8721;<sup>T</sup><sub>t=1</sub> 
-              &#8721;<sup>4</sup><sub>i=1</sub>
-              c<sub>h</sub><sup>i</sup>
-              (IL<sub>t</sub><sup>i</sup>)<sup>+</sup>,
-              c<sub>p</sub><sup>i</sup>
-              (IL<sub>t</sub><sup>i</sup>)<sup>-</sup>
-            </p>
+              <p>
+                &#8721;<sup>T</sup><sub>t=1</sub>
+                &#8721;<sup>4</sup><sub>i=1</sub>
+                c<sub>h</sub><sup>i</sup>
+                (IL<sub>t</sub><sup>i</sup>)<sup>+</sup>,
+                c<sub>p</sub><sup>i</sup>
+                (IL<sub>t</sub><sup>i</sup>)<sup>-</sup>
+              </p>
             </div>
             <p>
               Where c<sub>h</sub><sup>i</sup> is the cost of holding inventory and c<sub>p</sub><sup>i</sup> is the cost of shortages.
@@ -230,29 +220,29 @@ const SCIM = () => {
               The aim is to minimize:
             </p>
             <div className="math-formula">
-            <p>&#8721;<sup>4</sup><sub>i=1</sub>&#8721;<sup>T</sup><sub>t=1</sub> r<sub>t</sub><sup>i</sup> = Total Reward</p>
+              <p>&#8721;<sup>4</sup><sub>i=1</sub>&#8721;<sup>T</sup><sub>t=1</sub> r<sub>t</sub><sup>i</sup> = Total Reward</p>
             </div>
             <p>Which is the total reward for all agents over the entire game.</p>
             <strong>Feedback Scheme</strong>
             <p>
               As stated earlier, the agents only maintain local information of the game and do not have a global view of the entire supply chain.
-              Still, they require knowledge of the total reward after each episode of training. 
+              Still, they require knowledge of the total reward after each episode of training.
               For this to happen, we implement a penalization procedure in training to provide feedback to the RL agent about how it has played
             </p>
             <p>Let</p>
             <div className="math-formula">
-            <p>ω = ∑<sup>4</sup><sub>i=1</sub>∑<sup>T</sup><sub>t=1</sub>r<sub>t</sub><sup>i</sup>/T and τ<sup>i</sup> = ∑<sup>T</sup><sub>t=1</sub>r<sub>t</sub><sup>i</sup>/T</p>
+              <p>ω = ∑<sup>4</sup><sub>i=1</sub>∑<sup>T</sup><sub>t=1</sub>r<sub>t</sub><sup>i</sup>/T and τ<sup>i</sup> = ∑<sup>T</sup><sub>t=1</sub>r<sub>t</sub><sup>i</sup>/T</p>
             </div>
             <p>
               be the average reward per period and the average reward of agent i per period respectively.
               At the horizon (period T), for each agent i, we update its observed reward in all T time steps in the experience memory using the following formula:
             </p>
             <div className="math-formula">
-            <p>r<sub>t</sub><sup>i</sup> = r<sub>t</sub><sup>i</sup> + β<sub>3</sub><sup>i</sup>(ω - τ<sup>i</sup>), ∀t ∈ 1, ..., T</p>
+              <p>r<sub>t</sub><sup>i</sup> = r<sub>t</sub><sup>i</sup> + β<sub>3</sub><sup>i</sup>(ω - τ<sup>i</sup>), ∀t ∈ 1, ..., T</p>
             </div>
 
             <p>
-             β<sub>i</sub> is the regularization coefficient for agent i.
+              β<sub>i</sub> is the regularization coefficient for agent i.
             </p>
             <strong>Transfer Learning</strong>
             <p>
@@ -262,8 +252,8 @@ const SCIM = () => {
               This allows for customers to get up and running quickly without having to worry about tuning the models to their specific needs.
             </p>
             <p>
-            Assume there exists a source agent i ∈ &#123;1, 2, 3, 4&#125; with trained network S<sub>i</sub> (with a fixed size on all agents), parameters P<sub>1</sub><sup>i</sup> = &#123;|A<sub>1</sub><sup>j</sup>|, c<sub>p<sub>1</sub></sub><sup>j</sup> , c<sub>h<sub>1</sub></sub><sup>j</sup> &#125;, observed demand distribution D<sub>1</sub>, and co-player (i.e., teammate) policy π<sub>1</sub>.
-            We consider two models: base and new_customer. The aim is to traing a Neural Network for the ne customer (NN<sub>new_customer</sub>) for a target agent j i ∈ &#123;1, 2, 3, 4&#125;
+              Assume there exists a source agent i ∈ &#123;1, 2, 3, 4&#125; with trained network S<sub>i</sub> (with a fixed size on all agents), parameters P<sub>1</sub><sup>i</sup> = &#123;|A<sub>1</sub><sup>j</sup>|, c<sub>p<sub>1</sub></sub><sup>j</sup> , c<sub>h<sub>1</sub></sub><sup>j</sup> &#125;, observed demand distribution D<sub>1</sub>, and co-player (i.e., teammate) policy π<sub>1</sub>.
+              We consider two models: base and new_customer. The aim is to traing a Neural Network for the ne customer (NN<sub>new_customer</sub>) for a target agent j i ∈ &#123;1, 2, 3, 4&#125;
             </p>
             <p>
               The weight matrix W<sub>base</sub> contained learned weights for the base model such that the W<sub>i</sub><sup>q</sup> denotes the weight between laters q & q+1 of NN<sub>base</sub>. where q ∈ &#123;0, ..., nh&#125; and nh is the number of hidden layers in the NN.
@@ -285,6 +275,7 @@ const SCIM = () => {
             <p>Our AI agents for supply chain and inventory management represent a significant leap forward in operational efficiency. By harnessing the power of artificial intelligence, businesses can stay ahead of the curve and maintain a competitive edge in today's dynamic market.</p>
           </div>
         </article>
+        <NewsletterWidget></NewsletterWidget>
       </main>
     </div>
   );

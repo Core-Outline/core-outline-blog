@@ -38,7 +38,7 @@ const SCIM = () => {
             <span className="publish-date">Published: Aug 13, 2024</span>
 
           </div>
-          
+
           <header className="post-header">
             <h1>AI agents for supercharged Supply Chain and Inventory Management</h1>
           </header>

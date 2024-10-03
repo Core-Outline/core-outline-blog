@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/core-outline-blog/static/css/main.5809166f.css",
-    "main.js": "/core-outline-blog/static/js/main.72806102.js",
+    "main.css": "/core-outline-blog/static/css/main.e1edadc1.css",
+    "main.js": "/core-outline-blog/static/js/main.c2c60d29.js",
     "static/media/scim_video.mp4": "/core-outline-blog/static/media/scim_video.9a5df03a8b9291631534.mp4",
     "static/media/market-insights.jpg": "/core-outline-blog/static/media/market-insights.b61dca87b2d75065911c.jpg",
     "static/media/scim.png": "/core-outline-blog/static/media/scim.5483f103bf16be455068.png",
@@ -15,11 +15,11 @@
     "static/media/slick.ttf": "/core-outline-blog/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/core-outline-blog/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/core-outline-blog/index.html",
-    "main.5809166f.css.map": "/core-outline-blog/static/css/main.5809166f.css.map",
-    "main.72806102.js.map": "/core-outline-blog/static/js/main.72806102.js.map"
+    "main.e1edadc1.css.map": "/core-outline-blog/static/css/main.e1edadc1.css.map",
+    "main.c2c60d29.js.map": "/core-outline-blog/static/js/main.c2c60d29.js.map"
   },
   "entrypoints": [
-    "static/css/main.5809166f.css",
-    "static/js/main.72806102.js"
+    "static/css/main.e1edadc1.css",
+    "static/js/main.c2c60d29.js"
   ]
 }
